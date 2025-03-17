@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kider - Preschool Website Template</title>
+    <title>Kider</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/KI.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,12 +63,11 @@
                             <a href="call-to-action.html" class="dropdown-item">Become A Teachers</a>
                             <a href="appointment.html" class="dropdown-item">Make Appointment</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Error</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
                 </div>
-                <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="call-to-action.html" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->
@@ -80,7 +79,7 @@
                 <h1 class="display-2 text-white animated slideInDown mb-4">Contact Us</h1>
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
                         <li class="breadcrumb-item text-white active" aria-current="page">Contact Us</li>
                     </ol>
@@ -149,8 +148,8 @@
                                                 <label for="message">Message</label>
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                        <div id="liveAlertPlaceholder">
+                                            <button class="btn btn-primary w-100 py-3" type="submit" id="liveAlertBtn">Send Message</button>
                                         </div>
                                     </div>
                                 </form>
@@ -159,7 +158,7 @@
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                             <div class="position-relative h-100">
                                 <iframe class="position-relative rounded w-100 h-100"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.9999999999995!2d123.90500000000002!3d12.671000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1a1a1a1a1a1a1%3A0x0!2sZone%208%2C%20Bulan%2C%20Sorsogon%2C%20Philippines!5e0!3m2!1sen!2sph!4v1610000000000!5m2!1sen!2sph"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.9999999999995!2d123.8818282!3d12.6660985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1a1a1a1a1a1a1%3A0x0!2sZone%208%2C%20Bulan%2C%20Sorsogon%2C%20Philippines!5e0!3m2!1sen!2sph!4v1610000000000!5m2!1sen!2sph"
                                 frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
                                 tabindex="0"></iframe>
                             </div>
@@ -175,26 +174,25 @@
         <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Get In Touch</h3>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-6">
+                            <h3 class="text-white mb-4">Get In Touch</h3>
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Zone 8, Bulan, Sorsogon</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+63 9837-243-7364</p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>Kider@gmail.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href="https://www.x.com/"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-white mb-4">Quick Links</h3>
-                        <a class="btn btn-link text-white-50" href="">About Us</a>
-                        <a class="btn btn-link text-white-50" href="">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="">Our Services</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
-                    </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h3 class="text-white mb-4">Quick Links</h3>
+                            <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                            <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                            <a class="btn btn-link text-white-50" href="classes.html">Our Services</a>
+                        </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Photo Gallery</h3>
                         <div class="row g-2 pt-2">
@@ -240,9 +238,7 @@
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
                                 <a href="">Home</a>
-                                <a href="">Cookies</a>
                                 <a href="">Help</a>
-                                <a href="">FQAs</a>
                             </div>
                         </div>
                     </div>
@@ -266,6 +262,33 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script> 
+    document.getElementById('liveAlertBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+            const alert = document.createElement('div');
+            alert.className = 'alert alert-success alert-dismissible fade show';
+            alert.role = 'alert';
+            alert.innerHTML = `
+                <strong>Success!</strong> Your Message has been submitted.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            `;
+            alertPlaceholder.append(alert);
+        });
+
+    document.querySelector('.btn-primary.position-absolute').addEventListener('click', function(event) {
+            event.preventDefault();
+            const alertPlaceholder = document.querySelector('.position-relative.mx-auto');
+            const alert = document.createElement('div');
+            alert.className = 'alert alert-success alert-dismissible fade show mt-2';
+            alert.role = 'alert';
+            alert.innerHTML = `
+                <strong>Success!</strong> You have signed up for the newsletter.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            `;
+            alertPlaceholder.append(alert);
+        });
+    </script>
 </body>
 
 </html>
